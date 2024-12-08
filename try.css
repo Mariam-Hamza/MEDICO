@@ -1,0 +1,415 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E3C39D;
+    background: linear-gradient(135deg, #1d3c60, #071739);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+hr {
+    width: 80%;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* PAGE 1: Contact Items */
+.contact-items {
+    display: flex;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.customer-care:hover, .write-us:hover, .sales-market:hover {
+    transform: translate(0px, -25px);
+    transition: transform 0.3s ease-in-out; /* Added here for consistency */
+}
+
+.customer-care, .write-us, .sales-market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    margin: 30px auto;
+    padding: 35px 15px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 250px;
+    background: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    height: 250px;
+    border: 1px solid #071739;
+}
+
+p {
+    font-size: 15px;
+    color: black;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: none;
+    margin: 15px auto;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #A68868;
+    box-shadow: 0 0 5px black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4B6382 !important; /* Force light blue color on hover */
+}
+
+button:focus {
+    outline: 2px solid #A4B5C4; /* Highlight button when focused */
+    outline-offset: 2px;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.customer-care a {
+    color: #A68868;
+    text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+}
+
+.sales-market a {
+    color: #A68868;
+    text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+}
+
+#cust-care:hover, #sales:hover, #write:hover {
+    background-color: #071739;
+}
+
+/* PAGE 2: More Ways to Connect */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-ways-to-connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.connect-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.connect-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.connect-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.connect-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.connect-text ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.connect-text ul li i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.connect-image {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+.connect-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*page 3*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d3c60, #071739); /* Matches your earlier gradient */
+    color: #E3C39D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background: white; /* Light gray box */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.feedback-form h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #071739; /* Dark blue for heading text */
+}
+
+.feedback-form label {
+    font-size: 14px;
+    color: #333; /* Neutral text color */
+    display: block;
+    margin-bottom: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #071739; /* Border color to match the theme */
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #f9f9f9; /* Subtle background */
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #bbb; /* Placeholder text color */
+    font-size: 14px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #A68868; /* Matches the earlier button colors */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.feedback-form button:hover {
+    background-color: #4B6382; /* Hover color similar to the previous theme */
+}
+/*page4*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d3c60, #071739); /* Matches site theme */
+    color: #E3C39D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ask-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CDD5DB; /* Matches previous muted light gray */
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.ask-content {
+    width: 55%;
+    padding-right: 20px;
+}
+
+.ask-content h1 {
+    font-size: 28px;
+    color: #071739; /* Dark blue for headings */
+    margin-bottom: 20px;
+}
+
+.ask-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Soft text color */
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #071739; /* Matches the theme */
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #bbb;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #A68868; /* Matches site button color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4B6382; /* Hover color to match site buttons */
+}
+
+.ask-image {
+    width: 40%;
+    background-image: url('pharmacist.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ask-image img {
+    max-width: 100%;
+}
+/*page5*/
+
+
+.faq-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #4B6382;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    background: #A68868;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #4B6382;
+}
+
+.faq-answer {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .faq-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+}
+input,textarea {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  input:focus,textarea:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+
